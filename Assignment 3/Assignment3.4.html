@@ -1,0 +1,44 @@
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body>
+
+<h1 id="header">test</h1>
+
+<label for="username">Username</label>
+<input type="text" name="username" id="username">
+<label for="email">Email</label>
+<input type="text" name="email" id="email">
+<label for="password">Password</label>
+<input type="password" name="password" id="password">
+
+<br>
+<button type="button" id="button1">Submit!</button>
+
+<script>
+
+document.getElementById("button1").onclick = function() {passcheck(document.getElementById("password").value)};
+
+function passcheck(password)
+{
+	if(password === "12345678")
+	{
+		correctinfo();
+		return true;
+	}
+	alert("Wrong password.")
+	return false;
+}
+
+function correctinfo()
+{
+	document.getElementById("header").innerHTML = "Correct information entered.";
+}
+
+</script>
+
+</body>
+</html>

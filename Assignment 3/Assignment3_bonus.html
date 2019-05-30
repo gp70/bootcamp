@@ -1,0 +1,31 @@
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body>
+
+<p id="text"></p>
+
+<label for="radius">Sphere Radius (m)</label>
+<input type="text" name="radius" id="radius">
+
+<br>
+
+<button type="button" id="button1">Calculate volume!</button>
+
+<script>
+
+document.getElementById("button1").onclick = function() {myFunction()};
+
+function myFunction()
+{
+	let vol = (4/3) * Math.PI * Math.pow(document.getElementById("radius").value,3)
+  	document.getElementById("text").innerHTML = "Volume (m^3) = " + vol;
+}
+
+</script>
+
+</body>
+</html>

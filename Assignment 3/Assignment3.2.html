@@ -1,0 +1,23 @@
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body>
+
+<button id="text">Don't hover over me.</button>
+
+<script>
+
+document.getElementById("text").onmouseover = function() {myFunction()};
+
+function myFunction()
+{
+  alert("Hey, I told you not to hover over me!");
+}
+
+</script>
+
+</body>
+</html>
